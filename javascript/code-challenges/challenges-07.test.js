@@ -263,7 +263,7 @@ describe("Testing challenge 1", () => {
   });
 });
 
-describe("Testing challenge 2", () => {
+xdescribe("Testing challenge 2", () => {
   test("It should return an array with three items removed", () => {
     expect(removeThree(2, [1, 2, 3, 4, 5, 6, 7, 8])).toStrictEqual([
       1, 2, 6, 7, 8,
@@ -271,7 +271,7 @@ describe("Testing challenge 2", () => {
   });
 });
 
-describe("Testing challenge 3", () => {
+xdescribe("Testing challenge 3", () => {
   test("It should join an array", () => {
     expect(joinArray(["hello", "301", "students"])).toStrictEqual(
       "hello 301 students"
@@ -279,7 +279,7 @@ describe("Testing challenge 3", () => {
   });
 });
 
-describe("Testing challenge 4", () => {
+xdescribe("Testing challenge 4", () => {
   test("It should return a list of shortening words", () => {
     expect(howMuchPencil("Welcome")).toStrictEqual([
       "Welcome",
@@ -297,7 +297,7 @@ describe("Testing challenge 4", () => {
   });
 });
 
-describe("Testing challenge 5", () => {
+xdescribe("Testing challenge 5", () => {
   test("It should return an array of individual letters", () => {
     expect(wordsToCharList("Gregor")).toStrictEqual([
       "G",
@@ -320,7 +320,7 @@ describe("Testing challenge 5", () => {
   });
 });
 
-describe("Testing challenge 6", () => {
+xdescribe("Testing challenge 6", () => {
   test("It should return a list of foods", () => {
     expect(listFoods(gruffaloCrumble)).toStrictEqual([
       "Gruffalo",
