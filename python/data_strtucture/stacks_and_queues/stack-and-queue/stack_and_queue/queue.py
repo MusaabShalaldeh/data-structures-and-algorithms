@@ -1,4 +1,5 @@
 from stack_and_queue.node import Node
+from stack_and_queue.stack import Stack
 
 
 class Queue:
@@ -43,6 +44,25 @@ class Queue:
 
     def is_empty(self):
         return not self.front
+
+
+class PsuedoQueue:
+    def __init__(self):
+        self.first_stack = Stack()
+        self.second_stack = Stack()
+
+    def enqueue(self,value):
+        self.first_stack.push(value)
+
+    def dequeue(self):
+        if self.first_stack.is_empty() and self.second_stack.is_empty():
+            raise EmptyQueue("Error: dequeueing on an empty queue.")
+        if self.second_stack.is_empty():
+            while not self.first_stack.is_empty():
+                temporary_item = self.first_stack.pop()
+                self.second_stack.push(temporary_item)
+        return self.second_stack.pop()
+
 
 class EmptyQueue(Exception):
     pass

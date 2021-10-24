@@ -35,7 +35,5 @@ class Stack:
         return False
 
 
-
-
 class EmptyStack(Exception):
     pass

@@ -27,9 +27,20 @@ This means that the first item in the queue will be the first item out of the qu
 LILO
 Last In Last Out
 
+
+### Pseudo Queue:
+
+A data strucutre that the first item in, will be the first item out
+
+FIFO
+First In First Out
+
+LILO
+Last In Last Out
+
 ## Challenge
 
-Create **Stack** and **Queue** classes and implement their methods. 
+Create **Stack** and **Queue** classes and implement their methods.
 
 ## Approach & Efficiency
 
@@ -40,6 +51,10 @@ TDD: Test Driven Development
 ### Efficiency:
 
 All methods of both Stacks and Queues take O(1) as they are very efficent and don't use any sort of loop.
+
+Pseudo Stack Enqueue O(1)
+
+Pseudo Stack Dequeue O(n)
 
 ## API
 
@@ -59,7 +74,7 @@ All methods of both Stacks and Queues take O(1) as they are very efficent and do
 ```
 
 
-### QueuesL
+### Queues:
 
 ```
         Enqueue - Nodes or items that are added to the queue.
@@ -73,4 +88,12 @@ All methods of both Stacks and Queues take O(1) as they are very efficent and do
         Peek - When you peek you will view the value of the front Node in the queue. If called when the queue is empty an exception will be raised.
 
         IsEmpty - returns true when queue is empty otherwise returns false.
+```
+
+### PseudoQueues:
+
+```
+    Enqueue - Add an item to the queue.
+
+    Dequeue - Remove an item from the queue(if none exist, an EmptyQueue error will be raised.)
 ```
