@@ -1,6 +1,6 @@
 from stack_and_queue import __version__
 from stack_and_queue.stack import Stack, EmptyStack
-from stack_and_queue.queue import Queue, EmptyQueue
+from stack_and_queue.queue import Queue, EmptyQueue, PsuedoQueue
 import pytest
 
 
@@ -232,3 +232,33 @@ def dequeue_fail():
     queue = Queue()
     queue.dequeue()
 
+
+def test_pseudo_queue():
+    # Arrange
+    pseudo_queue = PsuedoQueue()
+    pseudo_queue.enqueue(5)
+    pseudo_queue.enqueue(10)
+    pseudo_queue.enqueue(15)
+
+    expected = 5
+
+    # Actual
+    actual = pseudo_queue.dequeue()
+    # Assert
+
+    assert actual == expected
+
+def test_pseudo_queue_fail():
+    # Arrange
+    with pytest.raises(EmptyQueue) as excinfo:
+        #Actual
+        dequeue_fail_on_pseudo_queue()
+
+    #Assert
+    assert str(excinfo.value) == "Error: dequeueing on an empty queue."
+
+
+
+def dequeue_fail_on_pseudo_queue():
+    queue = PsuedoQueue()
+    queue.dequeue()
