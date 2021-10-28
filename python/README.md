@@ -13,4 +13,5 @@
 | _Linked List Data Structure_| [GoTo](data_strtucture/linked_list/linked-list/README.md)|
 | _Stacks and Queues Data Structure_| [GoTo](data_strtucture/stacks_and_queues/stack-and-queue/README.md)|
 | _Stack Queue Animal Shelter_| [GoTo](code_challenges/stack-queue-animal-shelter/README.md)|
+| _Stack Queue Brackets_| [GoTo](code_challenges/stack-queue-brackets/README.md)|
 
