@@ -10,8 +10,14 @@
 | _Array Reverse_| [GoTo](code_challenges/array_reverse/README.md)|
 | _Array Insert Shift_| [GoTo](code_challenges/array_insert_shift/README.md)|
 | _Array Binary Search_| [GoTo](code_challenges/array-binary-search/README.md)|
-| _Linked List Data Structure_| [GoTo](data_strtucture/linked_list/linked-list/README.md)|
-| _Stacks and Queues Data Structure_| [GoTo](data_strtucture/stacks_and_queues/stack-and-queue/README.md)|
 | _Stack Queue Animal Shelter_| [GoTo](code_challenges/stack-queue-animal-shelter/README.md)|
 | _Stack Queue Brackets_| [GoTo](code_challenges/stack-queue-brackets/README.md)|
 
+
+### Data Structures
+
+| **Data Structure**| **Link** |
+| -----------| ----------- |
+| _Linked List Data Structure_| [GoTo](data_strtucture/linked_list/linked-list/README.md)|
+| _Stacks and Queues Data Structure_| [GoTo](data_strtucture/stacks_and_queues/stack-and-queue/README.md)|
+|_Binary Trees_| [GoTo](data_strtucture/trees/README.md)|
