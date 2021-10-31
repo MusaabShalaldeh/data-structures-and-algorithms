@@ -2,7 +2,7 @@
 Tests for Binary Tree
 """
 from trees import __version__
-from trees.trees import BinaryTree, Node
+from trees.trees import BinaryTree, Node, BinarySearchTree
 
 
 def test_version():
@@ -131,3 +131,46 @@ def test_in_order():
   # assert actual is same as expected
   assert actual == expected
 
+
+
+
+def test_binary_search_tree():
+    #Arrange
+    tree = BinarySearchTree()
+    tree.add(50)
+    tree.add(4)
+    tree.add(80)
+
+    expected = [50,4,80]
+    #Actual
+    actual = tree.bfs()
+
+    #Assert
+    assert expected == actual
+
+
+def test_binary_search_tree_contains():
+    # Arrange
+    tree = BinarySearchTree()
+    tree.add(50)
+    tree.add(4)
+    tree.add(80)
+    expected = True
+    # Actual
+    actual = tree.contains(4)
+
+    # Assert
+    assert expected == actual
+
+
+def test_binary_search_tree_doesnt_contain():
+    # Arrange
+    tree = BinarySearchTree()
+    tree.add(50)
+    tree.add(4)
+    expected = False
+    # Actual
+    actual = tree.contains(80)
+
+    # Assert
+    assert expected == actual

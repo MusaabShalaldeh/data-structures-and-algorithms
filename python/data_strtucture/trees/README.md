@@ -51,3 +51,24 @@ Efficiency:
 
     output: tree items
     """
+
+    Binary Search Tree Class Specific Methods:
+
+    add(self,value)
+    """
+    a class method that adds a value to the tree
+
+    input: value
+
+    output: none
+    """
+
+    contains(self,value)
+    """
+    a class method that detects if a value exists within the tree or not.
+
+    input: value
+
+    output: true or false
+    """
+
