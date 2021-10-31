@@ -1,12 +1,8 @@
 """
 Tests for Binary Tree
 """
-from trees import __version__
-from trees.trees import BinaryTree, Node, BinarySearchTree
+from data_strtucture.trees.trees import BinaryTree, Node, BinarySearchTree
 
-
-def test_version():
-    assert __version__ == '0.1.0'
 
 
 def test_bfs():
@@ -171,6 +167,53 @@ def test_binary_search_tree_doesnt_contain():
     expected = False
     # Actual
     actual = tree.contains(80)
+
+    # Assert
+    assert expected == actual
+
+
+
+
+def test_instantiate_tree():
+    # Arrange
+    tree = BinarySearchTree()
+    expected = True
+    # Actual
+    actual = False
+    if tree:
+        actual = True
+
+    # Assert
+    assert expected == actual
+
+
+def test_instantiate_tree_single_root():
+    # Arrange
+    tree = BinarySearchTree()
+    a_node = Node('1')
+    tree.root = a_node
+    expected = '1'
+    # Actual
+    actual = tree.root.data
+
+    # Assert
+    assert expected == actual
+
+
+
+def test_instantiate_tree_root_left_right():
+    # Arrange
+    tree = BinarySearchTree()
+    a_node = Node('1')
+    b_node = Node('2')
+    c_node = Node('3')
+    a_node.left = b_node
+    a_node.right = c_node
+
+    tree.root = a_node
+    expected = '2'
+    # Actual
+    actual = tree.root.left.data
 
     # Assert
     assert expected == actual
