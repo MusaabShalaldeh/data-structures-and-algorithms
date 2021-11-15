@@ -5,7 +5,10 @@ def merge_sort(_list: list):
 
     Args:
         _list (list): List to be merged.
+    Returns:
+        list (list): Sorted List
     """
+
     n = len(_list)
     if n > 1:
         mid = math.floor(n/2)
@@ -19,6 +22,16 @@ def merge_sort(_list: list):
 
 
 def merge(left, right, _list):
+    """Merge right and left in one list
+
+    Args:
+        left ([list]): left of list
+        right ([list]): right of the list
+        _list ([type]): original list
+
+    Returns:
+        None
+    """
     i = 0
     j = 0
     k = 0
