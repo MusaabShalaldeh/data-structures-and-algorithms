@@ -14,6 +14,7 @@
 | _Stack Queue Brackets_| [GoTo](code_challenges/stack-queue-brackets/README.md)|
 | _Tree Max_| [GoTo](code_challenges/tree_max/README.md)|
 | _Tree Breadth Forst_| [GoTo](code_challenges/tree_breadth_first/README.md)|
+| _Insertion Sort_| [GoTo](code_challenges/insertion-sort/README.md)|
 
 
 ### Data Structures

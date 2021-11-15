@@ -158,3 +158,59 @@ class BinarySearchTree(BinaryTree):
             if item == value:
                 return True
         return False
+
+
+
+
+def compare_tree_files_num(directory_one: BinaryTree, directory_two: BinaryTree):
+
+    queue = Queue()
+    counter_one = 0
+    counter_two = 0
+
+    def get_files_num(root):
+        queue.enqueue(root)
+        counter = 0
+        while queue.peek():
+            front = queue.dequeue()
+            if not front.left and not front.right:
+                counter +=1
+
+            if front.left:
+                queue.enqueue(front.left)
+            if front.right:
+                queue.enqueue(front.right)
+        return counter
+
+    counter_one = get_files_num(directory_one.root)
+    counter_two = get_files_num(directory_two.root)
+
+
+    return True if counter_one == counter_two else False
+
+
+
+if __name__ == "__main__":
+    first_tree = BinaryTree()
+    a_node = Node('1')
+    b_node = Node('2')
+    c_node = Node('3')
+    d_node = Node('4')
+    a_node.left = b_node
+    a_node.right = c_node
+    b_node.left = d_node
+
+    first_tree.root = a_node
+
+    second_tree = BinaryTree()
+    a_node = Node('1')
+    a_node.left = Node('2')
+    b_node = Node('3')
+    b_node.left = Node("15")
+    b_node.right = Node("3")
+    a_node.right = b_node
+
+    second_tree.root = a_node
+
+
+    print(compare_tree_files_num(first_tree,second_tree))
