@@ -17,9 +17,9 @@ Understanding Psuedo Code > Whiteboarding > coding and testing.
 
 - Big O:
 
-Time =
+Time = O(log n)
 
-Space =
+Space = O(log n)
 
 ## Solution
 
