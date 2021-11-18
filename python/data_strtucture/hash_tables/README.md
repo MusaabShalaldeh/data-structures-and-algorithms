@@ -21,9 +21,14 @@
 
 - Efficiency:
 
-**for all methods**:
+**for add and hash**:
 
 * Time = O(1)
+* Space = O(1)
+
+**for contains and retrive**:
+
+* Time = O(n)
 * Space = O(1)
 
 ## API
