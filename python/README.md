@@ -26,3 +26,4 @@
 | _Linked List Data Structure_| [GoTo](data_strtucture/linked_list/linked-list/README.md)|
 | _Stacks and Queues Data Structure_| [GoTo](data_strtucture/stacks_and_queues/stack-and-queue/README.md)|
 |_Binary Trees_| [GoTo](data_strtucture/trees/README.md)|
+|_Hash Maps_| [GoTo](data_strtucture/hash_tables/README.md)|
