@@ -15,8 +15,8 @@
 | _Tree Max_| [GoTo](code_challenges/tree_max/README.md)|
 | _Tree Breadth Forst_| [GoTo](code_challenges/tree_breadth_first/README.md)|
 | _Insertion Sort_| [GoTo](code_challenges/insertion_sort/README.md)|
- _Merge Sort_| [GoTo](code_challenges/merge_sort/README.md)|
-
+| _Merge Sort_| [GoTo](code_challenges/merge_sort/README.md)|
+| _Hashmap Repeated Word_| [GoTo](code_challenges/hashmap_repeated_word/README.md)|
 
 
 ### Data Structures
