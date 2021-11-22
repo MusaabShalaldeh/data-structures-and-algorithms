@@ -17,6 +17,7 @@
 | _Insertion Sort_| [GoTo](code_challenges/insertion_sort/README.md)|
 | _Merge Sort_| [GoTo](code_challenges/merge_sort/README.md)|
 | _Hashmap Repeated Word_| [GoTo](code_challenges/hashmap_repeated_word/README.md)|
+| _Tree Intersection_| [GoTo](code_challenges/tree_intersection/README.md)|
 
 
 ### Data Structures
