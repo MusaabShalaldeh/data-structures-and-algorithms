@@ -16,9 +16,9 @@ Approach: White Boarding > TDD > Fixing Code
 
 - Big O:
 
-Time = ?
+Time = O(n^3)
 
-Space = ?
+Space = O(1)
 
 ## Solution
 
