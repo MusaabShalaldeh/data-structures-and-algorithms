@@ -18,9 +18,9 @@ Whiteboarding > Writing tests > Implemeting code and fixing as needed
 
 Big O:
 
-Time =
+Time = O(n^2)
 
-Space =
+Space = O(1)
 
 ## Solution
 
