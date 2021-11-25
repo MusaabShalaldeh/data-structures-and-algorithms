@@ -18,6 +18,7 @@
 | _Merge Sort_| [GoTo](code_challenges/merge_sort/README.md)|
 | _Hashmap Repeated Word_| [GoTo](code_challenges/hashmap_repeated_word/README.md)|
 | _Tree Intersection_| [GoTo](code_challenges/tree_intersection/README.md)|
+| _Hashmap Left Join_| [GoTo](code_challenges/hashmap_left_join/README.md)|
 
 
 ### Data Structures
